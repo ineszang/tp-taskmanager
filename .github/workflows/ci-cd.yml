@@ -1,6 +1,7 @@
 #.github/workflows/ci-cd.yml
 name: Test CI
 on:
+  workflow_dispatch:
      inputs:
       logLevel:
         description: 'Log level'
