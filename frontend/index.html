@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task Manager (Demo)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Task Manager</h1>
+      <p>Mini app fil rouge pour CI/CD + tests</p>
+    </header>
+
+    <section class="card">
+      <h2>Créer une tâche</h2>
+      <form id="createForm">
+        <label>
+          Titre
+          <input id="title" type="text" required maxlength="200" placeholder="Ex: Écrire les tests API" />
+        </label>
+        <label>
+          Description (optionnel)
+          <textarea id="description" maxlength="1000" placeholder="Détails..."></textarea>
+        </label>
+        <button type="submit">Créer</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2>Liste des tâches</h2>
+        <button id="refreshBtn" type="button">Rafraîchir</button>
+      </div>
+      <div id="tasks"></div>
+    </section>
+
+    <footer class="footer">
+      <small>API attendue sur <code id="apiUrlLabel"></code></small>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
