@@ -4,3 +4,4 @@ sqlalchemy==2.0.36
 pydantic==2.10.3
 jinja2==2.10.1
 PyYAML==5.4
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
