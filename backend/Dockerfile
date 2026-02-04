@@ -4,7 +4,7 @@ RUN useradd -m appuser
 USER appuser
 
 WORKDIR /app
-COPY . /app/
+COPY ./app/
 
 
 RUN pip install -r requirements.txt
