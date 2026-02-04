@@ -1,4 +1,5 @@
 FROM python:3.12@sha256:9c77cd423768fba7a2e6b156d4fac57354685742452d13c05203fb2406b9ffaf
+LABEL maintainer="Inès Zang"
 
 RUN useradd -m appuser 
 USER appuser
