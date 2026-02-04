@@ -39,4 +39,9 @@ jobs:
       with:
           directory: example/examplea
           framework: terraform 
-
+    - name: build backend docker image
+      run: |
+        docker build -t taskmanager-backend ./backend
+    - name: build frontend docker image
+      run: |
+        docker build -t taskmanager-frontend ./frontend
